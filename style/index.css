@@ -1,0 +1,215 @@
+@media screen and (max-width: 360px) {
+  /* 헤더 */
+  .header_wrap {
+    width: 100%;
+  }
+
+  .header_wrap .header {
+    position: relative;
+    max-width: 36rem;
+    height: 3.5rem;
+    padding-top: 3rem;
+    text-align: center;
+    background: transparent;
+    line-height: 3.5rem;
+    z-index: 10;
+  }
+
+  .header_wrap .header i {
+    position: relative;
+    font-size: 2rem;
+    color: white;
+  }
+
+  .header_wrap .header .gnb {
+    float: left;
+    margin-left: 2rem;
+  }
+
+  .header_wrap .header .home {
+    left: -1.5rem;
+  }
+
+  .header_wrap .header .icon_wrap {
+    display: inline-block;
+    float: right;
+    background: red;
+    height: 0;
+    margin-right: 2rem;
+  }
+
+  .header_wrap .header .icon_wrap i {
+    font-size: 1.6rem;
+  }
+
+  .header_wrap .header .icon_wrap i {
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+
+  /*  슬라이드 영역 */
+  .intro {
+    max-width: 36rem;
+    height: 50rem;
+    top: -6.5rem;
+  }
+
+  .intro .swiper-slide {
+    height: 50rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: contain;
+  }
+
+  .intro .swiper-slide img {
+    position: relative;
+    display: block;
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* 슬라이드 type1 */
+  .intro .intro_type1 p {
+    position: absolute;
+    display: inline-block;
+    top: 50%;
+    left: 50%;
+    width: 25rem;
+    text-align: center;
+    color: #f2df3a;
+    text-transform: uppercase;
+    text-shadow: 0.5rem 0 rgba(0, 0, 0, 0.15);
+    transform: translate(-50%, -60%);
+  }
+
+  .intro .intro_type1 p span {
+    font-size: 3rem;
+    font-weight: 500;
+  }
+
+  .intro .intro_type1 em {
+    display: block;
+    position: relative;
+    top: 1.5rem;
+    font-size: 1.5rem;
+    font-style: normal;
+  }
+
+  div[class*="swiper-button"] {
+    color: #fff;
+    opacity: 0.5;
+  }
+
+  .swiper-pagination {
+    --swiper-theme-color: #fff;
+  }
+
+  /* 슬라이드 type2 */
+  .intro .intro_type2 p {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    width: 25rem;
+    height: auto;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0.3rem 0 rgba(0, 0, 0, 0.15);
+    transform: translateX(-50%);
+    white-space: nowrap;
+  }
+
+  .intro .intro_type2 p span {
+    display: inline-block;
+    letter-spacing: -0.1rem;
+    font-size: 3rem;
+    font-weight: 500;
+  }
+
+  .intro .intro_type2 em {
+    display: block;
+    position: relative;
+    top: 1.5rem;
+    font-size: 1.3rem;
+    font-style: normal;
+    text-shadow: 0.2rem 0 rgba(0, 0, 0, 0.15);
+  }
+
+  .intro .swiper-wrapper .type2_ver2 p {
+    top: 40%;
+    width: 25rem;
+    transform: translate(-50%);
+  }
+
+  .intro .swiper-wrapper .type2_ver2 span {
+    display: inline-block;
+    font-size: 2.5rem;
+  }
+
+  .intro .swiper-wrapper .type2_ver2 em {
+    display: block;
+    line-height: 2rem;
+  }
+
+  /* 슬라이드 type3 */
+  .intro .intro_type3 p {
+    position: absolute;
+    display: inline-block;
+    top: 20%;
+    left: 50%;
+    width: 25rem;
+    height: auto;
+    color: #fff;
+    text-align: center;
+    transform: translateX(-50%);
+    text-shadow: 0.2rem 0 rgba(0, 0, 0, 0.15);
+  }
+
+  .intro .intro_type3 p span {
+    letter-spacing: -0.1rem;
+    font-size: 2rem;
+    font-weight: 500;
+  }
+
+  .intro .swiper-wrapper .intro_type3 em {
+    display: inline-block;
+    position: relative;
+    top: 1rem;
+    font-size: 1.3rem;
+    font-style: normal;
+    text-shadow: 0.2rem 0 rgba(0, 0, 0, 0.15);
+  }
+
+  /* 슬라이드 type4 */
+  .intro .intro_type4 p {
+    position: absolute;
+    display: inline-block;
+    top: 28%;
+    left: 50%;
+    width: 25rem;
+    height: auto;
+    color: #fff;
+    text-align: center;
+    transform: translateX(-50%);
+    text-shadow: 0.2rem 0 rgba(0, 0, 0, 0.15);
+  }
+
+  .intro .intro_type4 p span {
+    display: inline-block;
+    letter-spacing: -0.1rem;
+    font-size: 3rem;
+    font-weight: 500;
+  }
+
+  .intro .swiper-wrapper .intro_type4 em {
+    display: block;
+    position: relative;
+    top: 15rem;
+    font-size: 1.3rem;
+    font-style: normal;
+    text-shadow: 0.2rem 0 rgba(0, 0, 0, 0.15);
+  }
+
+  /* 베스트 아이템 */
+}
