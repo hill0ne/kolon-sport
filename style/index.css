@@ -47,14 +47,14 @@
     height: 1.8rem;
   }
 
-  /*  슬라이드 영역 */
-  .intro {
+  /* 메인 슬라이드 영역 */
+  .main {
     max-width: 36rem;
     height: 50rem;
     top: -6.5rem;
   }
 
-  .intro .swiper-slide {
+  .main .swiper-slide {
     height: 50rem;
     display: flex;
     flex-direction: column;
@@ -62,7 +62,7 @@
     align-items: contain;
   }
 
-  .intro .swiper-slide img {
+  .main .swiper-slide img {
     position: relative;
     display: block;
     width: auto;
@@ -70,33 +70,140 @@
     object-fit: cover;
   }
 
+  .main .swiper-slide h2,
+  .main .swiper-slide em  {
+    text-shadow: 0.3rem 0 rgba(0, 0, 0, 0.15);
+    text-align: center;
+    white-space: nowrap;
+    text-transform: uppercase;
+    font-style: normal;
+  }
+
+  .main_type1 {
+    color: #f2df3a;
+  }
+
   /* 슬라이드 type1 */
-  .intro .intro_type1 p {
+   .main_type1 h2 {
     position: absolute;
     display: inline-block;
     top: 50%;
     left: 50%;
-    width: 25rem;
-    text-align: center;
-    color: #f2df3a;
-    text-transform: uppercase;
-    text-shadow: 0.5rem 0 rgba(0, 0, 0, 0.15);
+    font-size: 3rem;
+    font-weight: 500;
     transform: translate(-50%, -60%);
   }
 
-  .intro .intro_type1 p span {
+  .main_type1 em {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: inline-block;
+    margin-top: 6rem;
+    font-size: 1.5rem;
+    transform: translate(-50%, 0%);
+  }
+
+  /* 메인 슬라이드 type2 */
+   .main .main_type2 h2 {
+    position: absolute;
+    display: inline-block;
+    top: 60%;
+    left: 50%;
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: 500;
+    transform: translateX(-50%);
+  }
+
+  .main .main_type2 em {
+    position: absolute;
+    display: inline-block;
+    top: 60%;
+    left: 50%;
+    margin-top: 8rem;
+    color: #fff;
+    font-style: normal;
+    font-size: 1.5rem;
+    transform: translateX(-50%);
+  }
+
+  /* 메인 슬라이드 type3 */
+  .main_type3 h2 {
+    position: absolute;
+    display: inline-block;
+    top: 40%;
+    left: 50%;
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: 500;
+    transform: translateX(-50%);
+  }
+
+  .main_type3 em {
+    position: absolute;
+    display: inline-block;
+    top: 40%;
+    left: 50%;
+    margin-top: 8rem;
+    color: #fff;
+    font-style: normal;
+    font-size: 1.5rem;
+    transform: translateX(-50%);
+  }
+
+  /* 메인 슬라이드 type4 */
+  .main_type4 h2 {
+    position: absolute;
+    display: inline-block;
+    top: 20%;
+    left: 50%;
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: 500;
+    transform: translateX(-50%);
+  }
+
+  .main_type4 em {
+    position: absolute;
+    display: inline-block;
+    top: 20%;
+    left: 50%;
+    margin-top: 8rem;
+    color: #fff;
+    font-size: 1.5rem;
+    transform: translateX(-50%);
+  }
+
+
+  /* 메인 슬라이드 type4 */
+  .main .main_type5 h2 {
+    position: absolute;
+    display: inline-block;
+    top: 28%;
+    left: 50%;
+    width: 25rem;
+    height: auto;
+    color: #fff;
     font-size: 3rem;
     font-weight: 500;
+    text-align: center;
+    letter-spacing: -0.1rem;
+    transform: translateX(-50%);
+    text-shadow: 0.2rem 0 rgba(0, 0, 0, 0.15);
   }
 
-  .intro .intro_type1 em {
-    display: block;
-    position: relative;
-    top: 1.5rem;
+   .main .main_type5 em {
+    position: absolute;
+    display: inline-block;
+    bottom: 10%;
+    left: 50%;
+    color: #fff;
     font-size: 1.5rem;
-    font-style: normal;
+    transform: translateX(-50%);
   }
 
+  /* 버튼, 페이지네이션 스타일 */
   div[class*="swiper-button"] {
     color: #fff;
     opacity: 0.5;
@@ -105,111 +212,4 @@
   .swiper-pagination {
     --swiper-theme-color: #fff;
   }
-
-  /* 슬라이드 type2 */
-  .intro .intro_type2 p {
-    position: absolute;
-    top: 55%;
-    left: 50%;
-    width: 25rem;
-    height: auto;
-    color: #fff;
-    text-align: center;
-    text-shadow: 0.3rem 0 rgba(0, 0, 0, 0.15);
-    transform: translateX(-50%);
-    white-space: nowrap;
-  }
-
-  .intro .intro_type2 p span {
-    display: inline-block;
-    letter-spacing: -0.1rem;
-    font-size: 3rem;
-    font-weight: 500;
-  }
-
-  .intro .intro_type2 em {
-    display: block;
-    position: relative;
-    top: 1.5rem;
-    font-size: 1.3rem;
-    font-style: normal;
-    text-shadow: 0.2rem 0 rgba(0, 0, 0, 0.15);
-  }
-
-  .intro .swiper-wrapper .type2_ver2 p {
-    top: 40%;
-    width: 25rem;
-    transform: translate(-50%);
-  }
-
-  .intro .swiper-wrapper .type2_ver2 span {
-    display: inline-block;
-    font-size: 2.5rem;
-  }
-
-  .intro .swiper-wrapper .type2_ver2 em {
-    display: block;
-    line-height: 2rem;
-  }
-
-  /* 슬라이드 type3 */
-  .intro .intro_type3 p {
-    position: absolute;
-    display: inline-block;
-    top: 20%;
-    left: 50%;
-    width: 25rem;
-    height: auto;
-    color: #fff;
-    text-align: center;
-    transform: translateX(-50%);
-    text-shadow: 0.2rem 0 rgba(0, 0, 0, 0.15);
-  }
-
-  .intro .intro_type3 p span {
-    letter-spacing: -0.1rem;
-    font-size: 2rem;
-    font-weight: 500;
-  }
-
-  .intro .swiper-wrapper .intro_type3 em {
-    display: inline-block;
-    position: relative;
-    top: 1rem;
-    font-size: 1.3rem;
-    font-style: normal;
-    text-shadow: 0.2rem 0 rgba(0, 0, 0, 0.15);
-  }
-
-  /* 슬라이드 type4 */
-  .intro .intro_type4 p {
-    position: absolute;
-    display: inline-block;
-    top: 28%;
-    left: 50%;
-    width: 25rem;
-    height: auto;
-    color: #fff;
-    text-align: center;
-    transform: translateX(-50%);
-    text-shadow: 0.2rem 0 rgba(0, 0, 0, 0.15);
-  }
-
-  .intro .intro_type4 p span {
-    display: inline-block;
-    letter-spacing: -0.1rem;
-    font-size: 3rem;
-    font-weight: 500;
-  }
-
-  .intro .swiper-wrapper .intro_type4 em {
-    display: block;
-    position: relative;
-    top: 15rem;
-    font-size: 1.3rem;
-    font-style: normal;
-    text-shadow: 0.2rem 0 rgba(0, 0, 0, 0.15);
-  }
-
-  /* 베스트 아이템 */
 }
