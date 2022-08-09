@@ -96,7 +96,7 @@
     display: inline-block;
     top: 50%;
     left: 50%;
-    font-size: 2.7rem;
+    font-size: 2.8rem;
     font-weight: 500;
     transform: translate(-50%, -60%);
   }
@@ -120,7 +120,7 @@
     top: 55%;
     left: 50%;
     color: #fff;
-    font-size: 2.7rem;
+    font-size: 2.8rem;
     font-weight: 500;
     transform: translateX(-50%);
   }
@@ -144,7 +144,7 @@
     top: 35%;
     left: 50%;
     color: #fff;
-    font-size: 2.7rem;
+    font-size: 2.8rem;
     font-weight: 500;
     transform: translateX(-50%);
   }
@@ -168,7 +168,7 @@
     top: 20%;
     left: 50%;
     color: #fff;
-    font-size: 2.7rem;
+    font-size: 2.8rem;
     font-weight: 500;
     transform: translateX(-50%);
   }
@@ -213,25 +213,22 @@
 
   /* 버튼, 페이지네이션 스타일 */
   div[class*="swiper-button"] {
+    padding: 0 1rem 0 1rem;
+    top: 50%;
     color: #fff;
     opacity: 0.5;
   }
 
-  .swiper-wrapper .swiper-pagination {
-    --swiper-theme-color: #fff;
-  }
-
   /* 베스트 아이템 영역 */
   .section_items {
-    width: 100vw;
-    height: 100vh;
-    border: 2px solid blue;
+    max-width: 100vw;
+    max-height: 100vh;
   }
 
   .section_items h2 {
     display: inline-block;
     margin-bottom: 1.5rem;
-    font-size: 3rem;
+    font-size: 2.6rem;
   }
 
   .section_items .fa-star {
@@ -239,28 +236,21 @@
     top: 1rem;
     left: 1rem;
     color: #cacaca;
-    font-size: 1.8rem;
+    font-size: 2.2rem;
     z-index: 10;
   }
 
   .section_items .swiper {
     position: relative;
-    height: 100%;
-  }
-
-  .section_items .swiper-wrapper .swiper-slide {
-    height: 100%;
-    list-style: none;
-    background: yellow;
   }
 
   .swiper-wrapper .item_info {
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
     max-height: 100%;
     margin-top: 1rem;
+    margin-left: 0.8rem;
   }
 
   .section_items .items img {
@@ -269,7 +259,7 @@
   }
 
   .items .item_info .brand {
-    font-size: 1rem;
+    font-size: 1.5rem;
     color: #cacaca;
   }
 
@@ -277,36 +267,36 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    max-height: 80%;
-    font-size: 1.4rem;
+    margin: 2rem 0;
+    font-size: 1.8rem;
     word-break: break-all;
   }
 
   .items .item_info .text_wrap span:nth-child(1) {
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     color: #0f3d3e;
   }
 
   .items .item_info .price {
     position: relative;
-    top: 0.5rem;
-    font-size: 1.5rem;
+    margin: 1rem 0;
+    font-size: 2.2rem;
   }
 
   .items .swiper-slide .best {
     position: relative;
-    top: 1.5rem;
     padding: 0.5rem;
-    font-size: 1rem;
+    font-size: 1.3rem;
     color: #0f3d3e;
     background: #efefef;
+    margin-left: 0.8rem;
   }
 
   /* aside 영역 */
   aside.event {
     position: relative;
-    max-width: 100%;
-    top: 7rem;
+    max-width: 100vw;
+    margin-top: 10rem;
   }
 
   .event .image_wrap {
@@ -332,6 +322,7 @@
   .footer {
     position: relative;
     max-width: 100%;
+    margin-top: 10rem;
     border-top: 1px solid #cacaca;
   }
 
@@ -350,11 +341,11 @@
   .footer .list_customer {
     display: flex;
     margin-bottom: 2rem;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 
   .footer .list_customer li {
-    margin-right: 2rem;
+    margin-right: 1.8rem;
   }
 
   .footer .list_customer li:nth-of-type(3) {
@@ -362,7 +353,7 @@
   }
 
   .footer .company_info {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
 
   .footer .company_info button {
@@ -381,7 +372,7 @@
 
   .wrap dl {
     color: #999;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     text-align: center;
     line-height: 1.7rem;
   }
@@ -401,7 +392,7 @@
 
   .footer .list_policy {
     display: flex;
-    font-size: 1.1rem;
+    font-size: 1.4rem;
   }
 
   .footer .list_policy li {
@@ -436,12 +427,12 @@
   .wrap .sub_wrap {
     text-align: center;
     color: #777;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
   }
 
   .wrap p {
     color: #777;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     letter-spacing: 0;
     margin-bottom: 3rem;
   }
@@ -465,7 +456,7 @@
     position: relative;
     top: -2.5rem;
     color: #777;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     letter-spacing: 0.5px;
   }
 
@@ -474,7 +465,7 @@
     justify-content: space-evenly;
     width: 80%;
     color: #cacaca;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     letter-spacing: 0.5px;
   }
 }
