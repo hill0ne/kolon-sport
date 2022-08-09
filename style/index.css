@@ -1,12 +1,14 @@
-@media screen and (max-width: 360px) {
+/* 모바일 360 px */
+
+@media screen and (min-width: 320px) {
   /* 헤더 */
   .header_wrap {
-    width: 100%;
+    max-width: 100vw;
   }
 
   .header_wrap .header {
-    position: relative;
-    max-width: 36rem;
+    position: absolute;
+    width: 100%;
     height: 3.5rem;
     padding-top: 3rem;
     text-align: center;
@@ -33,7 +35,6 @@
   .header_wrap .header .icon_wrap {
     display: inline-block;
     float: right;
-    background: red;
     height: 0;
     margin-right: 2rem;
   }
@@ -49,18 +50,18 @@
 
   /* 메인 슬라이드 영역 */
   .main {
+    max-width: 100%;
     background: #fff;
   }
 
-  .section_main {
-    max-width: 36rem;
-    height: 50rem;
-    top: -6.5rem;
-    background: #fff;
+  .main .swiper {
+    max-width: 100%;
+    max-height: 100vh;
+    margin-bottom: 7rem;
   }
 
   .section_main .swiper-slide {
-    height: 50rem;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -70,7 +71,7 @@
   .section_main .swiper-slide img {
     position: relative;
     display: block;
-    width: auto;
+    width: 100%;
     height: 100%;
     object-fit: cover;
   }
@@ -79,9 +80,9 @@
   .section_main .swiper-slide em {
     text-shadow: 0.3rem 0 rgba(0, 0, 0, 0.15);
     text-align: center;
-    white-space: nowrap;
     text-transform: uppercase;
     font-style: normal;
+    overflow-wrap: break-word;
   }
 
   .main_type1 {
@@ -95,30 +96,31 @@
     display: inline-block;
     top: 50%;
     left: 50%;
-    font-size: 3rem;
+    font-size: 2.7rem;
     font-weight: 500;
     transform: translate(-50%, -60%);
   }
 
   .main_type1 em {
     position: absolute;
-    top: 60%;
+    top: 50%;
     left: 50%;
     display: inline-block;
-    margin-top: 6rem;
-    font-size: 1.5rem;
+    margin-top: 13rem;
+    font-size: 1.8rem;
     font-weight: normal;
     transform: translate(-50%, 0%);
   }
 
   /* 메인 슬라이드 type2 */
+
   .section_main .main_type2 h2 {
     position: absolute;
     display: inline-block;
-    top: 60%;
+    top: 55%;
     left: 50%;
     color: #fff;
-    font-size: 2.5rem;
+    font-size: 2.7rem;
     font-weight: 500;
     transform: translateX(-50%);
   }
@@ -126,12 +128,12 @@
   .section_main .main_type2 em {
     position: absolute;
     display: inline-block;
-    top: 60%;
+    top: 50%;
     left: 50%;
-    margin-top: 8rem;
+    margin-top: 15rem;
     color: #fff;
     font-style: normal;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     transform: translateX(-50%);
   }
 
@@ -139,10 +141,10 @@
   .main_type3 h2 {
     position: absolute;
     display: inline-block;
-    top: 40%;
+    top: 35%;
     left: 50%;
     color: #fff;
-    font-size: 2.5rem;
+    font-size: 2.7rem;
     font-weight: 500;
     transform: translateX(-50%);
   }
@@ -150,12 +152,12 @@
   .main_type3 em {
     position: absolute;
     display: inline-block;
-    top: 40%;
+    top: 35%;
     left: 50%;
-    margin-top: 8rem;
+    margin-top: 15rem;
     color: #fff;
     font-style: normal;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     transform: translateX(-50%);
   }
 
@@ -166,7 +168,7 @@
     top: 20%;
     left: 50%;
     color: #fff;
-    font-size: 2.5rem;
+    font-size: 2.7rem;
     font-weight: 500;
     transform: translateX(-50%);
   }
@@ -176,9 +178,9 @@
     display: inline-block;
     top: 20%;
     left: 50%;
-    margin-top: 8rem;
+    margin-top: 10rem;
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     transform: translateX(-50%);
   }
 
@@ -186,7 +188,7 @@
   .section_main .main_type5 h2 {
     position: absolute;
     display: inline-block;
-    top: 28%;
+    top: 35%;
     left: 50%;
     width: 25rem;
     height: auto;
@@ -205,7 +207,7 @@
     bottom: 10%;
     left: 50%;
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     transform: translateX(-50%);
   }
 
@@ -215,42 +217,41 @@
     opacity: 0.5;
   }
 
-  .swiper-pagination {
+  .swiper-wrapper .swiper-pagination {
     --swiper-theme-color: #fff;
   }
 
   /* 베스트 아이템 영역 */
   .section_items {
-    width: 100%;
-    background: #fff;
+    width: 100vw;
+    height: 100vh;
+    border: 2px solid blue;
   }
 
   .section_items h2 {
     display: inline-block;
     margin-bottom: 1.5rem;
-    font-size: 2rem;
+    font-size: 3rem;
   }
 
   .section_items .fa-star {
     position: absolute;
-    top: 1.3rem;
-    right: -4.5rem;
+    top: 1rem;
+    left: 1rem;
     color: #cacaca;
     font-size: 1.8rem;
     z-index: 10;
   }
 
-  .section_items .items {
-    height: 40rem;
-  }
-
-  .section_items .items .swiper-wrapper {
+  .section_items .swiper {
+    position: relative;
     height: 100%;
   }
 
   .section_items .swiper-wrapper .swiper-slide {
     height: 100%;
     list-style: none;
+    background: yellow;
   }
 
   .swiper-wrapper .item_info {
@@ -258,11 +259,13 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    height: 12rem;
+    max-height: 100%;
+    margin-top: 1rem;
   }
 
   .section_items .items img {
-    width: 16rem;
+    position: relative;
+    max-width: 100%;
   }
 
   .items .item_info .brand {
@@ -274,7 +277,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    height: 5rem;
+    max-height: 80%;
     font-size: 1.4rem;
     word-break: break-all;
   }
@@ -302,8 +305,8 @@
   /* aside 영역 */
   aside.event {
     position: relative;
-    width: 100%;
-    margin: 7rem 0;
+    max-width: 100%;
+    top: 7rem;
   }
 
   .event .image_wrap {
@@ -311,7 +314,7 @@
     flex-direction: column;
     align-content: center;
     margin: 0 auto;
-    width: 90%;
+    max-width: 90%;
   }
 
   .image_wrap a {
@@ -319,7 +322,7 @@
   }
 
   .image_wrap img {
-    width: 100%;
+    max-width: 100%;
   }
 
   .image_wrap a:nth-child(3) {
@@ -328,7 +331,7 @@
 
   .footer {
     position: relative;
-    width: 100%;
+    max-width: 100%;
     border-top: 1px solid #cacaca;
   }
 
