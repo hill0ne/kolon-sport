@@ -13,3 +13,13 @@
  - HTML - 웹 표준을 준수한 시맨틱 마크업 <br>
  - CSS <br>
  - jQuery - Swiper.js 라이브러리
+
+### 💁🏻‍♀️ Advanced Feature
+
+-
+-
+
+### 💬 이슈 & 개선사항
+
+-
+-
