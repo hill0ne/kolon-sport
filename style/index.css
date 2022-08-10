@@ -235,9 +235,17 @@
     margin-left: 0.8rem;
   }
 
-  .section_items .items img {
+  .section_items .items .image_wrap {
     position: relative;
     max-width: 100%;
+    overflow: hidden;
+  }
+
+  .section_items .items .image_wrap img {
+    position: relative;
+    display: block;
+    width: 100%;
+    object-fit: cover;
   }
 
   .items .item_info .brand {
@@ -493,6 +501,10 @@
   }
 
   /* 메인 슬라이드 영역 */
+
+  .main .swiper {
+    margin-bottom: 14rem;
+  }
   .section_main .swiper-slide h2 {
     font-size: 4rem;
   }
@@ -534,5 +546,48 @@
   .section_main .main_type5 em {
     top: 25%;
     margin-top: 17rem;
+  }
+
+  /* 베스트 아이템 영역 */
+
+  .section_items h2 {
+    margin-bottom: 3rem;
+    font-size: 3.5rem;
+  }
+
+  .section_items .fa-star {
+    position: absolute;
+    top: 2.5rem;
+    left: 2.5rem;
+  }
+
+  .swiper-wrapper .item_info {
+    margin-top: 3rem;
+    margin-left: 1.5rem;
+  }
+
+  .items .item_info .brand {
+    font-size: 2rem;
+  }
+
+  .items .item_info .text_wrap {
+    margin: 4rem 0;
+    font-size: 3rem;
+  }
+
+  .items .item_info .text_wrap span:nth-child(1) {
+    font-size: 2.2rem;
+    color: #0f3d3e;
+  }
+
+  .items .item_info .price {
+    margin: 2rem 0;
+    font-size: 3.2rem;
+  }
+
+  .items .swiper-slide .best {
+    padding: 1rem;
+    font-size: 2rem;
+    margin-left: 1.5rem;
   }
 }
