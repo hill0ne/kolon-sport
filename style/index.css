@@ -53,8 +53,7 @@
 
   .main .swiper {
     max-width: 100%;
-    max-height: 100vh;
-    margin-bottom: 7rem;
+    margin-bottom: 10rem;
   }
 
   .section_main .swiper-slide {
@@ -202,9 +201,8 @@
 
   /* 베스트 아이템 영역 */
   .section_items {
-    max-width: 100vw;
-    max-height: 100vh;
-    margin-left: 1.5rem;
+    width: 95vw;
+    margin: 0 auto;
   }
 
   .section_items h2 {
@@ -429,6 +427,7 @@
   }
 
   .wrap .list_subCheck {
+    position: relative;
     display: flex;
     justify-content: space-evenly;
   }
@@ -436,8 +435,8 @@
   .wrap .list_subCheck li:nth-of-type(1)::after {
     content: "";
     position: absolute;
-    top: 33.5rem;
-    left: 175px;
+    top: 0.3rem;
+    right: 15.8rem;
     width: 1px;
     height: 1.2rem;
     background: #777;
@@ -552,7 +551,7 @@
 
   .section_items h2 {
     margin-bottom: 3rem;
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
 
   .section_items .fa-star {
@@ -567,27 +566,126 @@
   }
 
   .items .item_info .brand {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .items .item_info .text_wrap {
-    margin: 4rem 0;
-    font-size: 3rem;
+    margin: 3rem 0;
+    font-size: 2.3rem;
   }
 
   .items .item_info .text_wrap span:nth-child(1) {
-    font-size: 2.2rem;
+    font-size: 2rem;
     color: #0f3d3e;
   }
 
   .items .item_info .price {
     margin: 2rem 0;
-    font-size: 3.2rem;
+    font-size: 2.2rem;
   }
 
   .items .swiper-slide .best {
-    padding: 1rem;
-    font-size: 2rem;
+    padding: 0.5rem;
+    font-size: 1.8rem;
     margin-left: 1.5rem;
+  }
+
+  /* aside 영역 */
+  aside.event {
+    margin: 12rem 0;
+  }
+
+  .event .image_wrap {
+    max-width: 80%;
+  }
+
+  .image_wrap a {
+    padding: 0 0 5rem 0;
+  }
+
+  .footer .wrap {
+    height: 80vh;
+    padding: 7rem 0 6rem 0;
+    letter-spacing: 0.5px;
+  }
+
+  .footer .list_customer {
+    display: flex;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+  }
+
+  .footer .list_customer li {
+    margin-right: 3rem;
+  }
+
+  .footer .company_info {
+    font-size: 2rem;
+  }
+
+  .footer .company_info button img {
+    width: 1rem;
+  }
+  /* 
+  .wrap .dl_wrap {
+    display: none; 
+  } */
+
+  .wrap dl {
+    color: #999;
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+  }
+
+  .footer .list_policy {
+    font-size: 2rem;
+  }
+
+  .footer .list_policy li {
+    position: relative;
+    color: #888;
+    margin-right: 3rem;
+  }
+
+  .footer .list_policy li:nth-of-type(1)::after {
+    top: 0.5rem;
+    right: -1.5rem;
+    height: 1.8rem;
+  }
+
+  .footer .list_policy li:nth-of-type(3)::before {
+    top: 0.5rem;
+    left: -1.5rem;
+    height: 1.8rem;
+  }
+
+  .wrap .sub_wrap {
+    font-size: 1.8rem;
+  }
+
+  .wrap p {
+    font-size: 1.8rem;
+    margin-bottom: 3rem;
+  }
+
+  .wrap .list_subCheck li {
+    position: relative;
+  }
+
+  .wrap .list_subCheck li:nth-of-type(1)::after {
+    position: absolute;
+    top: 0.5rem;
+    left: 20.2rem;
+    height: 1.8rem;
+  }
+
+  .wrap .copyright {
+    top: -2rem;
+    font-size: 1.5rem;
+    letter-spacing: 0.5px;
+  }
+
+  .wrap .list_social {
+    font-size: 1.8rem;
   }
 }
