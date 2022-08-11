@@ -1,3 +1,10 @@
+const gnb = document.querySelector(".gnb");
+const menu = document.querySelector(".gnb_menu");
+const main = document.querySelector(".main");
+const footer = document.querySelector(".footer");
+
+const btn_close = document.querySelector(".button_close");
+
 let status = false;
 
 setMobileScreen();
@@ -44,3 +51,17 @@ function setTabletScreen() {
   });
   status = false;
 }
+
+// gnb 펼침 함수
+gnb.addEventListener("click", () => {
+  console.log("클릭");
+  menu.style.display = "flex";
+  main.style.display = "none";
+  footer.style.display = "none";
+});
+
+btn_close.addEventListener("click", () => {
+  menu.style.display = "none";
+  main.style.display = "block";
+  footer.style.display = "block";
+});
