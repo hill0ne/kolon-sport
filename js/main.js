@@ -1,10 +1,13 @@
+const icons = document.querySelectorAll(".header i");
 const gnb = document.querySelector(".gnb");
 const menu = document.querySelector(".gnb_menu");
 const main = document.querySelector(".main");
 const footer = document.querySelector(".footer");
-const btn_close = document.querySelector(".button_close");
-
-const slide = document.querySelectorAll(".swiper-slide");
+const btn_gnb = document.querySelector(".button_gnb");
+const slides = document.querySelectorAll(".swiper-slide");
+const btn_info = document.querySelector(".button_info");
+const btn_img = document.querySelector(".button_info img");
+const info_wrap = document.querySelector(".company_info_wrap");
 
 let status = false;
 
@@ -43,7 +46,6 @@ function setMobileScreen() {
     slidesPerView: 2.2,
     spaceBetween: 10,
   });
-  status = true;
 }
 
 function setTabletScreen() {
@@ -51,19 +53,46 @@ function setTabletScreen() {
     slidesPerView: 4,
     spaceBetween: 10,
   });
-  status = false;
 }
 
-// gnb 펼침 함수
+// gnb 펼침
 gnb.addEventListener("click", () => {
   console.log("클릭");
   menu.style.display = "flex";
-  // main.style.display = "none";
-  // footer.style.display = "none";
+  main.style.display = "none";
+  footer.style.display = "none";
 });
 
-btn_close.addEventListener("click", () => {
+btn_gnb.addEventListener("click", () => {
   menu.style.display = "none";
-  // main.style.display = "block";
-  // footer.style.display = "block";
+  main.style.display = "block";
+  footer.style.display = "block";
 });
+
+// company_info 펼침
+btn_info.addEventListener("click", () => {
+  if (status === false) {
+    showInfo();
+  } else if (status === true) {
+    closeInfo();
+  }
+});
+
+function showInfo() {
+  btn_img.style.transform = "rotate(270deg)";
+  info_wrap.style.display = "block";
+  status = true;
+}
+
+function closeInfo() {
+  btn_img.style.transform = "rotate(90deg)";
+  info_wrap.style.display = "none";
+  status = false;
+}
+
+// 헤더 아이콘 컬러 변경
+// slides.forEach((item) => {
+//   if (item.classList.contains(".main_type5")) {
+//     console.log("slide 5번째");
+//   }
+// });

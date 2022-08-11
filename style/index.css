@@ -77,11 +77,12 @@
     font-size: 1.4rem;
   }
 
-  .header .gnb_menu .button_close {
+  .header .gnb_menu .button_gnb {
     position: absolute;
     top: 3.4rem;
     right: 2.4rem;
     font-size: 2.4rem;
+    color: black;
   }
 
   /* 메인 슬라이드 영역 */
@@ -392,8 +393,8 @@
     transform: rotate(90deg);
   }
 
-  .wrap .dl_wrap {
-    /* display: none; */
+  .wrap .company_info_wrap {
+    display: none;
   }
 
   .wrap dl {
@@ -667,13 +668,9 @@
     font-size: 2rem;
   }
 
-  .footer .company_info button img {
+  .company_info .company_info button img {
     width: 1rem;
   }
-  /* 
-  .wrap .dl_wrap {
-    display: none; 
-  } */
 
   .wrap dl {
     color: #999;
