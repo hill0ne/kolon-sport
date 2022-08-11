@@ -16,8 +16,8 @@
   .header_wrap .header i {
     position: absolute;
     top: 50%;
-    font-size: 2.5rem;
-    color: #222;
+    font-size: 2rem;
+    color: #fdfdfd;
     transform: translateY(-50%);
   }
 
@@ -28,15 +28,15 @@
 
   .header_wrap .header .search,
   .header_wrap .header .shopping {
-    font-size: 2.2rem;
+    font-size: 1.8rem;
   }
 
   .header_wrap .header .search {
-    right: 7rem;
+    right: 5rem;
   }
 
   .header_wrap .header .shopping {
-    right: 3rem;
+    right: 2rem;
   }
 
   /* gnb 스타일 */
@@ -59,29 +59,29 @@
   }
 
   .header .gnb_menu .menu_main li {
-    font-size: 3rem;
+    font-size: 2rem;
     padding: 2rem 0 2rem 3rem;
   }
 
   .header .gnb_menu .menu_board li {
     padding: 1.5rem 0 1.5rem 3rem;
-    font-size: 2.5rem;
+    font-size: 1.6rem;
     color: #222;
   }
 
   .header .gnb_menu .login {
     position: relative;
-    font-size: 2.3rem;
-    color: #9e9e9e;
     bottom: 3rem;
     padding-left: 3rem;
+    color: #9e9e9e;
+    font-size: 1.4rem;
   }
 
   .header .gnb_menu .button_close {
     position: absolute;
-    top: 3.5rem;
-    right: 2.5rem;
-    font-size: 4rem;
+    top: 3.4rem;
+    right: 2.4rem;
+    font-size: 2.4rem;
   }
 
   /* 메인 슬라이드 영역 */
@@ -117,42 +117,39 @@
     text-shadow: 0.3rem 0 rgba(0, 0, 0, 0.15);
     text-align: center;
     text-transform: uppercase;
-    color: #fff;
     overflow-wrap: break-word;
+    color: #fff;
   }
 
   .section_main .swiper-slide h2 {
-    font-size: 3rem;
+    font-size: 2.2rem;
   }
 
   .section_main .swiper-slide em {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     font-style: normal;
   }
 
-  .main_type1 {
-    color: #fffa4d;
-    font-weight: bold;
-  }
-
   /* 슬라이드 type1 */
-  .main_type1 h2 {
+  .section_main .main_type1 h2 {
     position: absolute;
     display: inline-block;
-    top: 50%;
+    top: 40%;
     left: 50%;
     font-weight: 500;
-    transform: translate(-50%, -60%);
+    transform: translateX(-50%);
+    color: #f2fa5a;
   }
 
-  .main_type1 em {
+  .section_main .main_type1 em {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     display: inline-block;
-    margin-top: 13rem;
+    margin-top: 10rem;
     font-weight: normal;
-    transform: translate(-50%, 0%);
+    color: #f2fa5a;
+    transform: translateX(-50%);
   }
 
   /* 메인 슬라이드 type2 */
@@ -170,7 +167,7 @@
     display: inline-block;
     top: 50%;
     left: 50%;
-    margin-top: 15rem;
+    margin-top: 12rem;
     transform: translateX(-50%);
   }
 
@@ -189,7 +186,7 @@
     display: inline-block;
     top: 35%;
     left: 50%;
-    margin-top: 15rem;
+    margin-top: 8rem;
     transform: translateX(-50%);
   }
 
@@ -208,7 +205,7 @@
     display: inline-block;
     top: 20%;
     left: 50%;
-    margin-top: 10rem;
+    margin-top: 8rem;
     transform: translateX(-50%);
   }
 
@@ -216,7 +213,7 @@
   .section_main .main_type5 h2 {
     position: absolute;
     display: inline-block;
-    top: 35%;
+    top: 40%;
     left: 50%;
     font-weight: 500;
     letter-spacing: -0.1rem;
@@ -226,8 +223,9 @@
   .section_main .main_type5 em {
     position: absolute;
     display: inline-block;
-    bottom: 10%;
+    top: 40%;
     left: 50%;
+    margin-top: 32rem;
     transform: translateX(-50%);
   }
 
@@ -248,7 +246,7 @@
   .section_items h2 {
     display: inline-block;
     margin-bottom: 1.5rem;
-    font-size: 2.6rem;
+    font-size: 2.2rem;
   }
 
   .section_items .fa-star {
@@ -256,7 +254,7 @@
     top: 1rem;
     left: 1rem;
     color: #cacaca;
-    font-size: 2.2rem;
+    font-size: 1.8rem;
     z-index: 10;
   }
 
@@ -287,7 +285,7 @@
   }
 
   .items .item_info .brand {
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: #cacaca;
   }
 
@@ -296,25 +294,25 @@
     display: flex;
     flex-direction: column;
     margin: 2rem 0;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     word-break: break-all;
   }
 
   .items .item_info .text_wrap span:nth-child(1) {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: #0f3d3e;
   }
 
   .items .item_info .price {
     position: relative;
     margin: 1rem 0;
-    font-size: 2.2rem;
+    font-size: 1.6rem;
   }
 
   .items .swiper-slide .best {
     position: relative;
     padding: 0.5rem;
-    font-size: 1.3rem;
+    font-size: 1rem;
     color: #0f3d3e;
     background: #efefef;
     margin-left: 0.8rem;
@@ -369,7 +367,7 @@
   .footer .list_customer {
     display: flex;
     margin-bottom: 2rem;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
   }
 
   .footer .list_customer li {
@@ -381,7 +379,7 @@
   }
 
   .footer .company_info {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
 
   .footer .company_info button {
@@ -400,7 +398,7 @@
 
   .wrap dl {
     color: #999;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     text-align: center;
     line-height: 1.7rem;
   }
@@ -420,7 +418,7 @@
 
   .footer .list_policy {
     display: flex;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
 
   .footer .list_policy li {
@@ -456,7 +454,7 @@
   .wrap .sub_wrap {
     text-align: center;
     color: #777;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 
   .wrap p {
@@ -475,8 +473,8 @@
   .wrap .list_subCheck li:nth-of-type(1)::after {
     content: "";
     position: absolute;
-    top: 0.3rem;
-    right: 15.8rem;
+    top: 0.22rem;
+    left: 15rem;
     width: 1px;
     height: 1.2rem;
     background: #777;
@@ -484,9 +482,9 @@
 
   .wrap .copyright {
     position: relative;
-    top: -2.5rem;
+    top: -2rem;
     color: #777;
-    font-size: 1.3rem;
+    font-size: 1rem;
     letter-spacing: 0.5px;
   }
 
@@ -495,7 +493,7 @@
     justify-content: space-evenly;
     width: 80%;
     color: #cacaca;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     letter-spacing: 0.5px;
   }
 }
@@ -544,6 +542,7 @@
   .main .swiper {
     margin-bottom: 14rem;
   }
+
   .section_main .swiper-slide h2 {
     font-size: 4rem;
   }
@@ -551,6 +550,11 @@
   .section_main .swiper-slide em {
     font-size: 2.8rem;
     font-style: normal;
+  }
+
+  /* 메인 슬라이드 type1 */
+  .section_main .main_type1 em {
+    margin-top: 18rem;
   }
 
   /* 메인 슬라이드 type2 */
@@ -564,27 +568,27 @@
   }
 
   .main_type3 em {
-    margin-top: 15rem;
+    margin-top: 14rem;
   }
 
   /* 메인 슬라이드 type4 */
   .main_type4 h2 {
-    top: 30%;
+    top: 20%;
   }
 
   .main_type4 em {
-    top: 30%;
-    margin-top: 10rem;
+    top: 20%;
+    margin-top: 15rem;
   }
 
   /* 메인 슬라이드 type5 */
   .section_main .main_type5 h2 {
-    top: 25%;
+    top: 20%;
   }
 
   .section_main .main_type5 em {
-    top: 25%;
-    margin-top: 17rem;
+    top: 20%;
+    margin-top: 18rem;
   }
 
   /* 베스트 아이템 영역 */

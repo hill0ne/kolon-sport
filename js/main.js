@@ -2,8 +2,9 @@ const gnb = document.querySelector(".gnb");
 const menu = document.querySelector(".gnb_menu");
 const main = document.querySelector(".main");
 const footer = document.querySelector(".footer");
-
 const btn_close = document.querySelector(".button_close");
+
+const slide = document.querySelectorAll(".swiper-slide");
 
 let status = false;
 
@@ -15,6 +16,7 @@ const swiper = new Swiper(".section_main", {
   slidesPerView: 1,
   spaceBetween: 30,
   loop: true,
+  effect: "fade",
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
@@ -56,12 +58,12 @@ function setTabletScreen() {
 gnb.addEventListener("click", () => {
   console.log("클릭");
   menu.style.display = "flex";
-  main.style.display = "none";
-  footer.style.display = "none";
+  // main.style.display = "none";
+  // footer.style.display = "none";
 });
 
 btn_close.addEventListener("click", () => {
   menu.style.display = "none";
-  main.style.display = "block";
-  footer.style.display = "block";
+  // main.style.display = "block";
+  // footer.style.display = "block";
 });

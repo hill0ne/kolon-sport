@@ -1,0 +1,11 @@
+.swiper-slide.swiper-slide-active h2,
+.swiper-slide.swiper-slide-active em {
+  animation: show-text 0.8s 0.5s both;
+}
+
+@keyframes show-text {
+  0% {
+    opacity: 0;
+    transform: translateX(3rem);
+  }
+}
