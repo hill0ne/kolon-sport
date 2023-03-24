@@ -1,11 +1,10 @@
-/* 모바일 360 ~ 767px */
 @media screen and (min-width: 320px) {
-  /* 헤더 */
+
   .header_wrap {
-    max-width: 100vw;
+    /* max-width: 100vw; */
   }
 
-  .header_wrap .header {
+  .header {
     position: absolute;
     width: 100%;
     height: 6rem;
@@ -13,7 +12,7 @@
     z-index: 10;
   }
 
-  .header_wrap .header i {
+  .header i {
     position: absolute;
     top: 50%;
     font-size: 2rem;
@@ -21,32 +20,30 @@
     transform: translateY(-50%);
   }
 
-  .header_wrap .header .home {
+  .home {
     left: 50%;
     transform: translate(-50%, -50%);
   }
 
-  .header_wrap .header .search,
-  .header_wrap .header .shopping {
+  .search,
+  .shopping {
     font-size: 1.8rem;
   }
 
-  .header_wrap .header .search {
+  .search {
     right: 5rem;
   }
 
-  .header_wrap .header .shopping {
+  .shopping {
     right: 2rem;
   }
 
-  /* gnb 스타일 */
-
-  .header_wrap .header .gnb {
+  .gnb {
     position: absolute;
     left: 3rem;
   }
 
-  .header .gnb_menu {
+  .gnb_menu {
     display: none;
     flex-direction: column;
     justify-content: space-around;
@@ -58,18 +55,18 @@
     z-index: 10;
   }
 
-  .header .gnb_menu .menu_main li {
+  .menu_main li {
     font-size: 2rem;
     padding: 2rem 0 2rem 3rem;
   }
 
-  .header .gnb_menu .menu_board li {
+  .menu_board li {
     padding: 1.5rem 0 1.5rem 3rem;
     font-size: 1.6rem;
     color: #222;
   }
 
-  .header .gnb_menu .login {
+  .login {
     position: relative;
     bottom: 3rem;
     padding-left: 3rem;
@@ -77,44 +74,36 @@
     font-size: 1.4rem;
   }
 
-  .header .gnb_menu .button_gnb {
+  .header i.button_gnb {
     position: absolute;
-    top: 3.4rem;
-    right: 2.4rem;
-    font-size: 2.4rem;
+    top: 40px;
+    right: 30px;
+    font-size: 25px;
     color: black;
   }
 
-  /* 메인 슬라이드 영역 */
   .main {
-    display: block;
-    max-width: 100%;
     background: #fff;
   }
 
-  .main .swiper {
-    max-width: 100%;
-    margin-bottom: 10rem;
-  }
-
   .section_main .swiper-slide {
-    height: 100vh;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: contain;
   }
 
-  .section_main .swiper-slide img {
-    position: relative;
-    display: block;
+  .slide-img-wrap {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: 600px;
   }
 
-  .section_main .swiper-slide h2,
-  .section_main .swiper-slide em {
+  .slide-img-wrap img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .section_main h2,
+  .section_main em {
     text-shadow: 0.3rem 0 rgba(0, 0, 0, 0.15);
     text-align: center;
     text-transform: uppercase;
@@ -122,148 +111,122 @@
     color: #fff;
   }
 
-  .section_main .swiper-slide h2 {
-    font-size: 2.2rem;
-  }
-
-  .section_main .swiper-slide em {
-    font-size: 1.4rem;
-    font-style: normal;
-  }
-
-  /* 슬라이드 type1 */
-  .section_main .main_type1 h2 {
+  .section_main h2 {
     position: absolute;
     display: inline-block;
-    top: 40%;
-    left: 50%;
+    font-size: 2.2rem;
     font-weight: 500;
     transform: translateX(-50%);
+  }
+
+  .section_main em {
+    position: absolute;
+    display: inline-block;
+    font-size: 1.4rem;
+    font-style: normal;
+    transform: translateX(-50%);
+  }
+
+  .section_main .main_type1 h2 {
+    top: 40%;
+    left: 50%;
     color: #f2fa5a;
   }
 
   .section_main .main_type1 em {
-    position: absolute;
     top: 40%;
     left: 50%;
-    display: inline-block;
     margin-top: 10rem;
     font-weight: normal;
     color: #f2fa5a;
-    transform: translateX(-50%);
   }
 
-  /* 메인 슬라이드 type2 */
   .section_main .main_type2 h2 {
-    position: absolute;
-    display: inline-block;
     top: 55%;
     left: 50%;
-    font-weight: 500;
     transform: translateX(-50%);
   }
 
   .section_main .main_type2 em {
-    position: absolute;
-    display: inline-block;
     top: 50%;
     left: 50%;
     margin-top: 12rem;
-    transform: translateX(-50%);
   }
 
-  /* 메인 슬라이드 type3 */
   .main_type3 h2 {
-    position: absolute;
-    display: inline-block;
     top: 35%;
     left: 50%;
-    font-weight: 500;
-    transform: translateX(-50%);
   }
 
   .main_type3 em {
-    position: absolute;
-    display: inline-block;
     top: 35%;
     left: 50%;
     margin-top: 8rem;
-    transform: translateX(-50%);
   }
 
-  /* 메인 슬라이드 type4 */
   .main_type4 h2 {
-    position: absolute;
-    display: inline-block;
     top: 20%;
     left: 50%;
-    font-weight: 500;
-    transform: translateX(-50%);
   }
 
   .main_type4 em {
-    position: absolute;
-    display: inline-block;
     top: 20%;
     left: 50%;
     margin-top: 8rem;
-    transform: translateX(-50%);
   }
 
-  /* 메인 슬라이드 type4 */
   .section_main .main_type5 h2 {
-    position: absolute;
-    display: inline-block;
     top: 40%;
     left: 50%;
-    font-weight: 500;
     letter-spacing: -0.1rem;
-    transform: translateX(-50%);
   }
 
   .section_main .main_type5 em {
-    position: absolute;
-    display: inline-block;
     top: 40%;
     left: 50%;
     margin-top: 32rem;
-    transform: translateX(-50%);
   }
 
-  /* 버튼, 페이지네이션 스타일 */
   div[class*="swiper-button"] {
     padding: 0 1rem 0 1rem;
-    top: 50%;
-    color: #fff;
+    color: #222;
     opacity: 0.5;
   }
 
-  /* 베스트 아이템 영역 */
+  .swiper-button-prev {
+    margin-left: 20%;
+  }
+
+  .swiper-button-next {
+    margin-right: 20%;
+  }
+
   .section_items {
     width: 95vw;
     margin: 0 auto;
+    margin-top: 50px;
   }
 
   .section_items h2 {
     display: inline-block;
     margin-bottom: 1.5rem;
-    font-size: 2.2rem;
+    font-size: 1.8rem;
   }
 
   .section_items .fa-star {
     position: absolute;
+    z-index: 10;
     top: 1rem;
     left: 1rem;
-    color: #cacaca;
     font-size: 1.8rem;
-    z-index: 10;
+    color: #cacaca;
   }
 
   .section_items .swiper {
     position: relative;
   }
 
-  .swiper-wrapper .item_info {
+  .item_info {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -285,35 +248,35 @@
     object-fit: cover;
   }
 
-  .items .item_info .brand {
-    font-size: 1rem;
+  .brand {
+    font-size: 12px;
     color: #cacaca;
   }
 
-  .items .item_info .text_wrap {
+  .text_wrap {
     position: relative;
     display: flex;
     flex-direction: column;
     margin: 2rem 0;
-    font-size: 1.4rem;
+    font-size: 14px;
     word-break: break-all;
   }
 
-  .items .item_info .text_wrap span:nth-child(1) {
+  .text_wrap span:nth-child(1) {
     font-size: 1.2rem;
     color: #0f3d3e;
   }
 
-  .items .item_info .price {
+  .price {
     position: relative;
     margin: 1rem 0;
-    font-size: 1.6rem;
+    font-size: 14px;
   }
 
-  .items .swiper-slide .best {
+  .best {
     position: relative;
     padding: 0.5rem;
-    font-size: 1rem;
+    font-size: 12px;
     color: #0f3d3e;
     background: #efefef;
     margin-left: 0.8rem;
@@ -321,17 +284,15 @@
 
   /* aside 영역 */
   aside.event {
-    position: relative;
-    max-width: 100vw;
-    margin-top: 10rem;
+    margin-top: 100px;
   }
 
   .event .image_wrap {
     display: flex;
     flex-direction: column;
     align-content: center;
-    margin: 0 auto;
     max-width: 90%;
+    margin: 0 auto;
   }
 
   .image_wrap a {
@@ -358,17 +319,16 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    gap: 15px;
     width: 90%;
-    height: 45rem;
-    padding: 4rem 0 5rem 0;
     margin: 0 auto;
     letter-spacing: -1px;
   }
 
   .footer .list_customer {
     display: flex;
-    margin-bottom: 2rem;
-    font-size: 1.4rem;
+    margin-top: 70px;
+    font-size: 12px;
   }
 
   .footer .list_customer li {
@@ -380,7 +340,8 @@
   }
 
   .footer .company_info {
-    font-size: 1.2rem;
+    margin-top: 20px;
+    font-size: 12px;
   }
 
   .footer .company_info button {
@@ -399,7 +360,7 @@
 
   .wrap dl {
     color: #999;
-    font-size: 1.2rem;
+    font-size: 10px;
     text-align: center;
     line-height: 1.7rem;
   }
@@ -419,7 +380,8 @@
 
   .footer .list_policy {
     display: flex;
-    font-size: 1.2rem;
+    margin-top: 20px;
+    font-size: 10px;
   }
 
   .footer .list_policy li {
@@ -429,23 +391,23 @@
   }
 
   .footer .list_policy li:nth-of-type(1)::after {
-    content: "";
     position: absolute;
-    top: 0.5rem;
+    top: 0;
     right: -1rem;
     width: 1px;
     height: 1.2rem;
     background: #777;
+    content: "";
   }
 
   .footer .list_policy li:nth-of-type(3)::before {
-    content: "";
     position: absolute;
-    top: 0.5rem;
+    top: 0;
     left: -0.9rem;
     width: 1px;
     height: 1.2rem;
     background: #777;
+    content: "";
   }
 
   .footer .list_policy li:nth-of-type(3) {
@@ -455,37 +417,38 @@
   .wrap .sub_wrap {
     text-align: center;
     color: #777;
-    font-size: 1.2rem;
+    font-size: 10px;
   }
 
   .wrap p {
+    margin-top: 20px;
+    font-size: 10px;
     color: #777;
-    font-size: 1.2rem;
     letter-spacing: 0;
-    margin-bottom: 3rem;
   }
 
   .wrap .list_subCheck {
     position: relative;
     display: flex;
     justify-content: space-evenly;
+    margin-top: 20px;
   }
 
   .wrap .list_subCheck li:nth-of-type(1)::after {
-    content: "";
     position: absolute;
     top: 0.22rem;
-    left: 15rem;
+    left: 125px;
     width: 1px;
     height: 1.2rem;
     background: #777;
+    content: "";
   }
 
   .wrap .copyright {
     position: relative;
-    top: -2rem;
+    margin-top: 20px;
     color: #777;
-    font-size: 1rem;
+    font-size: 10px;
     letter-spacing: 0.5px;
   }
 
@@ -493,72 +456,93 @@
     display: flex;
     justify-content: space-evenly;
     width: 80%;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    font-size: 10px;
     color: #cacaca;
-    font-size: 1.2rem;
     letter-spacing: 0.5px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .header_wrap .header {
+  .header {
+    position: relative;
+    top: 0;
     height: 4rem;
     padding: 3rem 0 2rem 0;
     background: transparent;
     z-index: 10;
   }
 
-  .header_wrap .header i {
+  .header i {
     position: absolute;
     top: 50%;
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     color: #222;
     transform: translateY(-50%);
   }
 
-  .header_wrap .header .gnb {
+  .gnb {
     left: 4rem;
   }
 
-  .header_wrap .header .home {
+  .header i.button_gnb {
+    top: 10px;
+    right: 50px;
+    font-size: 30px;
+  }
+
+  .home {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
   }
 
-  .header_wrap .header .search,
-  .header_wrap .header .shopping {
-    font-size: 3rem;
+  .search,
+  .shopping {
+    font-size: 1.8rem;
   }
 
-  .header_wrap .header .search {
+  .search {
     right: 8rem;
   }
 
-  .header_wrap .header .shopping {
+  .shopping {
     right: 4rem;
   }
 
-  /* 메인 슬라이드 영역 */
-
   .main .swiper {
-    margin-bottom: 14rem;
+    overflow: hidden;
+    margin-top: 10px;
+  }
+
+  .swiper-wrapper {
+    display: flex;
+  }
+
+  .slide-img-wrap {
+    position: relative;
+    width: 600px;
+    height: 800px;
+  }
+
+  .slide-img-wrap img {
+    display: block;
+    width: 100%;
   }
 
   .section_main .swiper-slide h2 {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 
   .section_main .swiper-slide em {
-    font-size: 2.8rem;
-    font-style: normal;
+    font-size: 2rem;
   }
 
-  /* 메인 슬라이드 type1 */
   .section_main .main_type1 em {
     margin-top: 18rem;
   }
 
-  /* 메인 슬라이드 type2 */
   .section_main .main_type2 h2 {
     top: 55%;
   }
@@ -572,7 +556,6 @@
     margin-top: 14rem;
   }
 
-  /* 메인 슬라이드 type4 */
   .main_type4 h2 {
     top: 20%;
   }
@@ -582,7 +565,6 @@
     margin-top: 15rem;
   }
 
-  /* 메인 슬라이드 type5 */
   .section_main .main_type5 h2 {
     top: 20%;
   }
@@ -592,11 +574,9 @@
     margin-top: 18rem;
   }
 
-  /* 베스트 아이템 영역 */
-
   .section_items h2 {
     margin-bottom: 3rem;
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 
   .section_items .fa-star {
@@ -605,43 +585,42 @@
     left: 2.5rem;
   }
 
-  .swiper-wrapper .item_info {
+  .item_info {
     margin-top: 3rem;
     margin-left: 1.5rem;
   }
 
-  .items .item_info .brand {
-    font-size: 1.5rem;
+  .brand {
+    font-size: 14px;
   }
 
-  .items .item_info .text_wrap {
+  .text_wrap {
     margin: 3rem 0;
-    font-size: 2.3rem;
+    font-size: 16px;
   }
 
-  .items .item_info .text_wrap span:nth-child(1) {
+  .text_wrap span:nth-child(1) {
     font-size: 2rem;
     color: #0f3d3e;
   }
 
-  .items .item_info .price {
+  .price {
     margin: 2rem 0;
-    font-size: 2.2rem;
+    font-size: 16px;
   }
 
-  .items .swiper-slide .best {
+  .best {
     padding: 0.5rem;
-    font-size: 1.8rem;
     margin-left: 1.5rem;
+    font-size: 16px;
   }
 
-  /* aside 영역 */
   aside.event {
-    margin: 12rem 0;
+    margin-top: 200px;
   }
 
   .event .image_wrap {
-    max-width: 80%;
+    max-width: 50%;
   }
 
   .image_wrap a {
@@ -649,15 +628,14 @@
   }
 
   .footer .wrap {
-    height: 80vh;
-    padding: 7rem 0 6rem 0;
+    gap: 20px;
     letter-spacing: 0.5px;
   }
 
   .footer .list_customer {
     display: flex;
-    margin-bottom: 2rem;
-    font-size: 2.5rem;
+    margin-bottom: 15px;
+    font-size: 16px;
   }
 
   .footer .list_customer li {
@@ -665,7 +643,7 @@
   }
 
   .footer .company_info {
-    font-size: 2rem;
+    font-size: 14px;
   }
 
   .company_info .company_info button img {
@@ -674,12 +652,12 @@
 
   .wrap dl {
     color: #999;
-    font-size: 1.6rem;
+    font-size: 14px;
     line-height: 2.5rem;
   }
 
   .footer .list_policy {
-    font-size: 2rem;
+    font-size: 14px;
   }
 
   .footer .list_policy li {
@@ -689,24 +667,24 @@
   }
 
   .footer .list_policy li:nth-of-type(1)::after {
-    top: 0.5rem;
+    top: 0;
     right: -1.5rem;
     height: 1.8rem;
   }
 
   .footer .list_policy li:nth-of-type(3)::before {
-    top: 0.5rem;
+    top: 0;
     left: -1.5rem;
     height: 1.8rem;
   }
 
   .wrap .sub_wrap {
-    font-size: 1.8rem;
+    font-size: 14px;
   }
 
   .wrap p {
-    font-size: 1.8rem;
     margin-bottom: 3rem;
+    font-size: 14px;
   }
 
   .wrap .list_subCheck li {
@@ -715,18 +693,17 @@
 
   .wrap .list_subCheck li:nth-of-type(1)::after {
     position: absolute;
-    top: 0.5rem;
-    left: 20.2rem;
+    left: 155px;
     height: 1.8rem;
   }
 
   .wrap .copyright {
     top: -2rem;
-    font-size: 1.5rem;
+    font-size: 12px;
     letter-spacing: 0.5px;
   }
 
   .wrap .list_social {
-    font-size: 1.8rem;
+    font-size: 14px;
   }
 }

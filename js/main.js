@@ -14,7 +14,6 @@ let status = false;
 setMobileScreen();
 setTabletScreen();
 
-// 메인 슬라이드 라이브러리
 const swiper = new Swiper(".section_main", {
   slidesPerView: 1,
   spaceBetween: 30,
@@ -90,9 +89,3 @@ function closeInfo() {
   status = false;
 }
 
-// 헤더 아이콘 컬러 변경
-// slides.forEach((item) => {
-//   if (item.classList.contains(".main_type5")) {
-//     console.log("slide 5번째");
-//   }
-// });

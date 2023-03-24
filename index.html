@@ -1,358 +1,380 @@
 <!DOCTYPE html>
 <html lang="ko-KR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style/reset.css" />
-    <link rel="stylesheet" href="./style/style.css" />
-    <link rel="stylesheet" href="./style/index.css" />
-    <link rel="stylesheet" href="./style/animation.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
-    <script src="./js/jquery-3.6.0.min.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js" defer></script>
-    <script src="./js/main.js" defer></script>
-    <script src="https://kit.fontawesome.com/47700574a2.js" crossorigin="anonymous"></script>
-    <title>KORON SPORT</title>
-  </head>
-  <body>
-    <div class="header_wrap">
-      <header class="header">
-        <i class="fa-solid fa-bars gnb" role="button"></i>
-        <ul class="gnb_menu">
-          <li>
-            <ul class="menu_main">
-              <li><a href="">HOME</a></li>
-              <li><a href="">KOLON SPORT</a></li>
-              <li><a href="">OUTDOOR</a></li>
-              <li><a href="">SHOP</a></li>
-              <li><a href="">ISSUE</a></li>
-              <li><a href="">PROGRAM</a></li>
-            </ul>
-          </li>
-          <li>
-            <ul class="menu_board">
-              <li><a href="">기획전</a></li>
-              <li><a href="">이벤트</a></li>
-              <li><a href="">베스트 리뷰</a></li>
-              <li><a href="">마이페이지</a></li>
-            </ul>
-          </li>
-          <li class="login"><a href="">로그인</a></li>
-          <i class="fa-solid fa-xmark button_gnb"></i>
-        </ul>
-        <a href="#"><i class="fa-solid fa-house home"></i></a>
-        <i class="fa-solid fa-magnifying-glass search"></i>
-        <i class="fa-solid fa-bag-shopping shopping"></i>
-      </header>
-    </div>
-    <main class="main">
-      <section class="swiper section_main">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide main_type1">
-            <img src="./assets/img/kolon-main01.jpg" alt="SUMMER VACANCE" />
-            <h2><strong>2022</strong><br />SUMMER<br />VACANCE</h2>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style/reset.css">
+  <link rel="stylesheet" href="./style/common.css">
+  <link rel="stylesheet" href="./style/style.css">
+  <link rel="stylesheet" href="./style/index.css">
+  <link rel="stylesheet" href="./style/animation.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+  <script src="./js/jquery-3.6.0.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js" defer></script>
+  <script src="./js/main.js" defer></script>
+  <script src="https://kit.fontawesome.com/47700574a2.js" crossorigin="anonymous"></script>
+  <title>KORON SPORT</title>
+</head>
+
+<body>
+  <div class="header_wrap">
+    <header class="header">
+      <i class="fa-solid fa-bars gnb" role="button">
+        <span class="blind">메뉴</span>
+      </i>
+      <ul class="gnb_menu">
+        <li>
+          <ul class="menu_main">
+            <li>
+              <a href="">HOME</a>
+            </li>
+            <li>
+              <a href="">KOLON SPORT</a>
+            </li>
+            <li>
+              <a href="">OUTDOOR</a>
+            </li>
+            <li>
+              <a href="">SHOP</a>
+            </li>
+            <li>
+              <a href="">ISSUE</a>
+            </li>
+            <li>
+              <a href="">PROGRAM</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <ul class="menu_board">
+            <li>
+              <a href="">기획전</a>
+            </li>
+            <li>
+              <a href="">이벤트</a>
+            </li>
+            <li>
+              <a href="">베스트 리뷰</a>
+            </li>
+            <li>
+              <a href="">마이페이지</a>
+            </li>
+          </ul>
+        </li>
+        <li class="login" <a href="">로그인</a>
+        </li>
+        <i class="fa-solid fa-xmark button_gnb"></i>
+      </ul>
+      <a href="#">
+        <i class="fa-solid fa-house home"></i>
+      </a>
+      <i class="fa-solid fa-magnifying-glass search"></i>
+      <i class="fa-solid fa-bag-shopping shopping"></i>
+    </header>
+  </div>
+  <main class="main">
+    <section class="swiper section_main">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide main_type1">
+          <div class="slide-img-wrap">
+            <img src="./assets/img/kolon-main01.jpg" alt="">
+          </div>
+          <h2>
+            <strong>2022</strong>
+            <br>SUMMER<br>VACANCE</h2>
             <em>KOLON SPORT</em>
-          </div>
-          <div class="swiper-slide main_type2">
-            <img src="./assets/img/kolon-main02.jpg" alt="여름 슬라이드" />
-            <h2>
-              여름을 위한<br />
-              슬라이드
-            </h2>
-            <em
-              >이 계절에 편하게<br />
-              신을 수 있는 슬라이드</em
-            >
-          </div>
-          <div class="swiper-slide main_type3">
-            <img src="./assets/img/kolon-main03.jpg" alt="코오롱 스포츠 에어도트" />
-            <h2>시원함을 입다<br />에어도트</h2>
-            <em
-              >뛰어난 통기성으로 여름철<br>
-              시원하게 입을 수 있는<br />
-              최적의 아이템!</em
-            >
-          </div>
-          <div class="swiper-slide main_type3">
-            <img src="./assets/img/kolon-main04.jpg" alt="코오롱 스포츠 테크슈즈" />
-            <h2>테크 슈즈<br />#CAMP</h2>
-            <em>모든 아웃도어 활동을 위한<br>시그니처 하이킹화</em>
-          </div>
-          <div class="swiper-slide main_type4">
-            <img src="./assets/img/kolon-main05.jpg" alt="코오롱 스포츠 아웃도어" />
-            <h2>요즘 아웃도어<br>필수템</h2>
-            <em
-              >버킷햇부터<br />
-              전문가용 라인까지<br />한번에 만나는 쾌적한<br />
-              착용감의 아이템</em
-            >
-          </div>
-          <div class="swiper-slide main_type5">
-            <img src="./assets/img/kolon-main06.jpg" alt="코오롱 스포르 로드맵 서울" />
-            <h2>ROAD<br />LAB<br />2022</h2>
-            <em
-              >서울에서 즐기는 자연,<br />도시와 자연을<br />
-              넘나들다</em
-            >
-          </div>
         </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-      </section>
-
-      <!-- 베스트 아이템 -->
-      <section class="section_items">
-        <h2>BEST ITEM</h2>
-        <div class="swiper items">
-          <ul class="swiper-wrapper">
-            <li class="swiper-slide">
-              <div class="image_wrap">
-                <img src="./assets/img/best-item-1.png" alt="남여공용 하이킹화" />
-              </div>
-              <i class="fa-solid fa-star"></i>
-              <div class="item_info">
-                <span class="brand">KOLON SPORT</span>
-                <div class="text_wrap">
-                  <span>[8월쇼핑혜택]</span>
-                  <span>남여공용 하이킹화 #무브</span>
-                </div>
-                <span class="price">230,000원</span>
-              </div>
-              <span class="best">베스트</span>
-            </li>
-            <li class="swiper-slide">
-              <div class="image_wrap">
-                <img src="./assets/img/best-item-2.png" alt="남여공용 하이킹화" />
-              </div>
-              <i class="fa-solid fa-star"></i>
-              <div class="item_info">
-                <span class="brand">KOLON SPORT</span>
-                <div class="text_wrap">
-                  <span>[8월쇼핑혜택]</span>
-                  <span>여성 데이팩 숏팬츠 #DAY PACK</span>
-                </div>
-                <span class="price">68,000원</span>
-              </div>
-              <span class="best">베스트</span>
-            </li>
-            <li class="swiper-slide">
-              <div class="image_wrap">
-                <img src="./assets/img/best-item-3.png" alt="남여공용 하이킹화" />
-              </div>
-              <i class="fa-solid fa-star"></i>
-              <div class="item_info">
-                <span class="brand">KOLON SPORT</span>
-                <div class="text_wrap">
-                  <span>[8월쇼핑혜택]</span>
-                  <span>남여공용 솟솟 그래픽 티셔츠</span>
-                </div>
-                <span class="price">58,000원</span>
-              </div>
-              <span class="best">베스트</span>
-            </li>
-            <li class="swiper-slide">
-              <div class="image_wrap">
-                <img src="./assets/img/best-item-4.png" alt="남여공용 하이킹화" />
-              </div>
-              <i class="fa-solid fa-star"></i>
-              <div class="item_info">
-                <span class="brand">KOLON SPORT</span>
-                <div class="text_wrap">
-                  <span>[8월쇼핑혜택]</span>
-                  <span>[코오롱스포츠 X 이규태] 사옥수 하이</span>
-                </div>
-                <span class="price">15,000원</span>
-              </div>
-            </li>
-            <li class="swiper-slide">
-              <div class="image_wrap">
-                <img src="./assets/img/best-item-5.png" alt="남여공용 하이킹화" />
-              </div>
-              <i class="fa-solid fa-star"></i>
-              <div class="item_info">
-                <span class="brand">KOLON SPORT</span>
-                <div class="text_wrap">
-                  <span>[8월쇼핑혜택]</span>
-                  <span>고어텍스 버킷햇</span>
-                </div>
-                <span class="price">68,000원</span>
-              </div>
-            </li>
-            <li class="swiper-slide">
-              <div class="image_wrap">
-                <img src="./assets/img/best-item-6.png" alt="남여공용 하이킹화" />
-              </div>
-              <i class="fa-solid fa-star"></i>
-              <div class="item_info">
-                <span class="brand">KOLON SPORT</span>
-                <div class="text_wrap">
-                  <span>[8월쇼핑혜택]</span>
-                  <span>남여공용 샌들 #JOY Q</span>
-                </div>
-                <span class="price">138,000원</span>
-              </div>
-              <span class="best">베스트</span>
-            </li>
-            <li class="swiper-slide">
-              <div class="image_wrap">
-                <img src="./assets/img/best-item-7.png" alt="남여공용 하이킹화" />
-              </div>
-              <i class="fa-solid fa-star"></i>
-              <div class="item_info">
-                <span class="brand">KOLON SPORT</span>
-                <div class="text_wrap">
-                  <span>[8월쇼핑혜택]</span>
-                  <span>데이팩 버킷햇 #DAY PACK</span>
-                </div>
-                <span class="price">48,000원</span>
-              </div>
-              <span class="best">베스트</span>
-            </li>
-            <li class="swiper-slide">
-              <div class="image_wrap">
-                <img src="./assets/img/best-item-8.png" alt="남여공용 하이킹화" />
-              </div>
-              <i class="fa-solid fa-star"></i>
-              <div class="item_info">
-                <span class="brand">KOLON SPORT</span>
-                <div class="text_wrap">
-                  <span>[8월쇼핑혜택]</span>
-                  <span>남성 밴딩 쇼츠</span>
-                </div>
-                <span class="price">68,000원</span>
-              </div>
-              <span class="best">베스트</span>
-            </li>
-            <li class="swiper-slide">
-              <div class="image_wrap">
-                <img src="./assets/img/best-item-9.png" alt="남여공용 하이킹화" />
-              </div>
-              <i class="fa-solid fa-star"></i>
-              <div class="item_info">
-                <span class="brand">KOLON SPORT</span>
-                <div class="text_wrap">
-                  <span>[8월쇼핑혜택]</span>
-                  <span>남여공용 샌들 #DRAGON</span>
-                </div>
-                <span class="price">168,000원</span>
-              </div>
-              <span class="best">베스트</span>
-            </li>
-            <li class="swiper-slide">
-              <div class="image_wrap">
-                <img src="./assets/img/best-item-10.png" alt="남여공용 하이킹화" />
-              </div>
-              <i class="fa-solid fa-star"></i>
-              <div class="item_info">
-                <span class="brand">KOLON SPORT</span>
-                <div class="text_wrap">
-                  <span>[8월쇼핑혜택]</span>
-                  <span>여성 와이어 브림 버킷햇</span>
-                </div>
-                <span class="price">68,000원</span>
-              </div>
-              <span class="best">베스트</span>
-            </li>
-            <li class="swiper-slide">
-              <div class="image_wrap">
-                <img src="./assets/img/best-item-11.png" alt="남여공용 하이킹화" />
-              </div>
-              <i class="fa-solid fa-star"></i>
-              <div class="item_info">
-                <span class="brand">KOLON SPORT</span>
-                <div class="text_wrap">
-                  <span>[8월쇼핑혜택]</span>
-                  <span>남여공용 캠핑 와펜 반팔 티셔츠</span>
-                </div>
-                <span class="price">48,000원</span>
-              </div>
-              <span class="best">베스트</span>
-            </li>
-            <li class="swiper-slide">
-              <div class="image_wrap">
-                <img src="./assets/img/best-item-12.png" alt="남여공용 하이킹화" />
-              </div>
-              <i class="fa-solid fa-star"></i>
-              <div class="item_info">
-                <span class="brand">KOLON SPORT</span>
-                <div class="text_wrap">
-                  <span>[8월쇼핑혜택]</span>
-                  <span>남성 기본형 반팔 라운드티셔츠</span>
-                </div>
-                <span class="price">58,000원</span>
-              </div>
-            </li>
-          </ul>
+        <div class="swiper-slide main_type2">
+          <div class="slide-img-wrap">
+            <img src="./assets/img/kolon-main02.jpg" alt="">
+          </div>
+          <h2>
+            여름을 위한<br> 슬라이드
+          </h2>
+          <em>이 계절에 편하게<br> 신을 수 있는 슬라이드</em>
         </div>
-      </section>
-
-      <aside class="event">
-        <div class="image_wrap">
-          <a href=""><img src="./assets/img/event_1.png" alt="" /></a>
-          <a href=""><img src="./assets/img/event_2.png" alt="" /></a>
-          <a href=""><img src="./assets/img/event_3.png" alt="" /></a>
+        <div class="swiper-slide main_type3">
+          <div class="slide-img-wrap">
+            <img src="./assets/img/kolon-main03.jpg" alt="">
+          </div>
+          <h2>시원함을 입다<br>에어도트</h2>
+          <em>뛰어난 통기성으로 여름철<br> 시원하게 입을 수 있는<br>최적의 아이템!</em>
         </div>
-      </aside>
-    </main>
-    <footer class="footer">
-      <div class="wrap">
-        <ul class="list_customer">
-          <li><a href="#" title="로그인">로그인</a></li>
-          <li><a href="#" title="고객센터">고객센터</a></li>
-          <li><a href="#" title="매장안내">매장안내</a></li>
-        </ul>
-        <div class="company_info">
-          코오롱인더스트리㈜ FnC부문 사업자정보
-          <button class="button_info" aria-haspopup="true" aria-expanded="false">
-            <img src="./assets/img/arrow.png" alt="팝업 열기" />
-          </button>
+        <div class="swiper-slide main_type3">
+          <div class="slide-img-wrap">
+            <img src="./assets/img/kolon-main04.jpg" alt="">
+          </div>
+          <h2>테크 슈즈<br>#CAMP</h2>
+          <em>모든 아웃도어 활동을 위한<br>시그니처 하이킹화</em>
         </div>
-        <div class="company_info_wrap">
-          <dl>
-            <dt>대표이사</dt>
-            <dd>유석진</dd>
-            <dt>소재지</dt>
-            <dd>서울특별시 강남구 삼성로 518</dd>
-            <br />
-            <dt>고객센터</dt>
-            <dd>1588-7667 (유료)</dd>
-            <br />
-            <dt>대표메일</dt>
-            <dd>kolonsport@kolon.com</dd>
-            <br />
-            <dt>통신판매업신고</dt>
-            <dd>제2017-서울강남-02297호</dd>
-            <br />
-            <dt>사업자등록번호</dt>
-            <dd>138-85-19612</dd>
-          </dl>
+        <div class="swiper-slide main_type4">
+          <div class="slide-img-wrap">
+            <img src="./assets/img/kolon-main05.jpg" alt="">
+          </div>
+          <h2>요즘 아웃도어<br>필수템</h2>
+          <em>버킷햇부터<br>전문가용 라인까지<br>한번에 만나는 쾌적한<br>착용감의 아이템</em>
         </div>
-        <ul class="list_policy">
-          <li><a href="">사업자정보확인</a></li>
-          <li><a href="">이용약관</a></li>
-          <li><a href="">개인정보 처리방침</a></li>
-        </ul>
-        <div class="sub_wrap">
-          <p>
-            <em
-              >고객님은 안전거래를 위해 결제 시 저희 사이트에서 가입한<br />
-              구매안전서비스를 이용하실 수 있습니다.</em
-            >
-          </p>
-          <ul class="list_subCheck">
-            <li><a href="">토스페이먼츠 가입확인</a></li>
-            <li><a href="">나이스페이먼츠 가입확인</a></li>
-          </ul>
+        <div class="swiper-slide main_type5">
+          <div class="slide-img-wrap">
+            <img src="./assets/img/kolon-main06.jpg" alt="">
+          </div>
+          <h2>ROAD<br>LAB<br>2022</h2>
+          <em>서울에서 즐기는 자연,<br>도시와 자연을<br>넘나들다</em>
         </div>
-        <span class="copyright">ⓒ KOLON SPORT all rights reserved</span>
-        <ul class="list_social">
-          <li><a href="">Facebook</a></li>
-          <li><a href="">Instagram</a></li>
-          <li><a href="">Youtube</a></li>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </section>
+    <section class="section_items">
+      <h2>BEST ITEM</h2>
+      <div class="swiper items">
+        <ul class="swiper-wrapper">
+          <li class="swiper-slide">
+            <div class="image_wrap">
+              <img src="./assets/img/best-item-1.png" alt="">
+            </div>
+            <i class="fa-solid fa-star"></i>
+            <div class="item_info">
+              <span class="brand">KOLON SPORT</span>
+              <div class="text_wrap">
+                <span>[8월쇼핑혜택]</span>
+                <span> #무브</span>
+              </div>
+              <span class="price">230,000원</span>
+            </div>
+            <span class="best">베스트</span>
+          </li>
+          <li class="swiper-slide">
+            <div class="image_wrap">
+              <img src="./assets/img/best-item-2.png" alt="">
+            </div>
+            <i class="fa-solid fa-star"></i>
+            <div class="item_info">
+              <span class="brand">KOLON SPORT</span>
+              <div class="text_wrap">
+                <span>[8월쇼핑혜택]</span>
+                <span>여성 데이팩 숏팬츠 #DAY PACK</span>
+              </div>
+              <span class="price">68,000원</span>
+            </div>
+            <span class="best">베스트</span>
+          </li>
+          <li class="swiper-slide">
+            <div class="image_wrap">
+              <img src="./assets/img/best-item-3.png" alt="">
+            </div>
+            <i class="fa-solid fa-star"></i>
+            <div class="item_info">
+              <span class="brand">KOLON SPORT</span>
+              <div class="text_wrap">
+                <span>[8월쇼핑혜택]</span>
+                <span>남여공용 솟솟 그래픽 티셔츠</span>
+              </div>
+              <span class="price">58,000원</span>
+            </div>
+            <span class="best">베스트</span>
+          </li>
+          <li class="swiper-slide">
+            <div class="image_wrap">
+              <img src="./assets/img/best-item-4.png" alt="">
+            </div>
+            <i class="fa-solid fa-star"></i>
+            <div class="item_info">
+              <span class="brand">KOLON SPORT</span>
+              <div class="text_wrap">
+                <span>[8월쇼핑혜택]</span>
+                <span>[코오롱스포츠 X 이규태] 사옥수 하이</span>
+              </div>
+              <span class="price">15,000원</span>
+            </div>
+          </li>
+          <li class="swiper-slide">
+            <div class="image_wrap">
+              <img src="./assets/img/best-item-5.png" alt="">
+            </div>
+            <i class="fa-solid fa-star"></i>
+            <div class="item_info">
+              <span class="brand">KOLON SPORT</span>
+              <div class="text_wrap">
+                <span>[8월쇼핑혜택]</span>
+                <span>고어텍스 버킷햇</span>
+              </div>
+              <span class="price">68,000원</span>
+            </div>
+          </li>
+          <li class="swiper-slide">
+            <div class="image_wrap">
+              <img src="./assets/img/best-item-6.png" alt="">
+            </div>
+            <i class="fa-solid fa-star"></i>
+            <div class="item_info">
+              <span class="brand">KOLON SPORT</span>
+              <div class="text_wrap">
+                <span>[8월쇼핑혜택]</span>
+                <span>남여공용 샌들 #JOY Q</span>
+              </div>
+              <span class="price">138,000원</span>
+            </div>
+            <span class="best">베스트</span>
+          </li>
+          <li class="swiper-slide">
+            <div class="image_wrap">
+              <img src="./assets/img/best-item-7.png" alt="">
+            </div>
+            <i class="fa-solid fa-star"></i>
+            <div class="item_info">
+              <span class="brand">KOLON SPORT</span>
+              <div class="text_wrap">
+                <span>[8월쇼핑혜택]</span>
+                <span>데이팩 버킷햇 #DAY PACK</span>
+              </div>
+              <span class="price">48,000원</span>
+            </div>
+            <span class="best">베스트</span>
+          </li>
+          <li class="swiper-slide">
+            <div class="image_wrap">
+              <img src="./assets/img/best-item-8.png" alt="">
+            </div>
+            <i class="fa-solid fa-star"></i>
+            <div class="item_info">
+              <span class="brand">KOLON SPORT</span>
+              <div class="text_wrap">
+                <span>[8월쇼핑혜택]</span>
+                <span>남성 밴딩 쇼츠</span>
+              </div>
+              <span class="price">68,000원</span>
+            </div>
+            <span class="best">베스트</span>
+          </li>
+          <li class="swiper-slide">
+            <div class="image_wrap">
+              <img src="./assets/img/best-item-9.png" alt="">
+            </div>
+            <i class="fa-solid fa-star"></i>
+            <div class="item_info">
+              <span class="brand">KOLON SPORT</span>
+              <div class="text_wrap">
+                <span>[8월쇼핑혜택]</span>
+                <span>남여공용 샌들 #DRAGON</span>
+              </div>
+              <span class="price">168,000원</span>
+            </div>
+            <span class="best">베스트</span>
+          </li>
+          <li class="swiper-slide">
+            <div class="image_wrap">
+              <img src="./assets/img/best-item-10.png" alt="">
+            </div>
+            <i class="fa-solid fa-star"></i>
+            <div class="item_info">
+              <span class="brand">KOLON SPORT</span>
+              <div class="text_wrap">
+                <span>[8월쇼핑혜택]</span>
+                <span>여성 와이어 브림 버킷햇</span>
+              </div>
+              <span class="price">68,000원</span>
+            </div>
+            <span class="best">베스트</span>
+          </li>
+          <li class="swiper-slide">
+            <div class="image_wrap">
+              <img src="./assets/img/best-item-11.png" alt="">
+            </div>
+            <i class="fa-solid fa-star"></i>
+            <div class="item_info">
+              <span class="brand">KOLON SPORT</span>
+              <div class="text_wrap">
+                <span>[8월쇼핑혜택]</span>
+                <span>남여공용 캠핑 와펜 반팔 티셔츠</span>
+              </div>
+              <span class="price">48,000원</span>
+            </div>
+            <span class="best">베스트</span>
+          </li>
+          <li class="swiper-slide">
+            <div class="image_wrap">
+              <img src="./assets/img/best-item-12.png" alt="">
+            </div>
+            <i class="fa-solid fa-star"></i>
+            <div class="item_info">
+              <span class="brand">KOLON SPORT</span>
+              <div class="text_wrap">
+                <span>[8월쇼핑혜택]</span>
+                <span>남성 기본형 반팔 라운드티셔츠</span>
+              </div>
+              <span class="price">58,000원</span>
+            </div>
+          </li>
         </ul>
       </div>
-    </footer>
-    <!-- footer -->
-  </body>
+    </section>
+    <aside class="event">
+      <div class="image_wrap">
+        <a href=""><img src="./assets/img/event_1.png" alt=""></a>
+        <a href=""><img src="./assets/img/event_2.png" alt=""></a>
+        <a href=""><img src="./assets/img/event_3.png" alt=""></a>
+      </div>
+    </aside>
+  </main>
+  <footer class="footer">
+    <div class="wrap">
+      <ul class="list_customer">
+        <li><a href="#" title="로그인">로그인</a></li>
+        <li><a href="#" title="고객센터">고객센터</a></li>
+        <li><a href="#" title="매장안내">매장안내</a></li>
+      </ul>
+      <div class="company_info">
+        코오롱인더스트리㈜ FnC부문 사업자정보
+        <button class="button_info" aria-haspopup="true" aria-expanded="false">
+          <img src="./assets/img/arrow.png" alt="팝업 열기">
+        </button>
+      </div>
+      <div class="company_info_wrap">
+        <dl>
+          <dt>대표이사</dt>
+          <dd>유석진</dd>
+          <dt>소재지</dt>
+          <dd>서울특별시 강남구 삼성로 518</dd>
+          <br>
+          <dt>고객센터</dt>
+          <dd>1588-7667 (유료)</dd>
+          <br>
+          <dt>대표메일</dt>
+          <dd>kolonsport@kolon.com</dd>
+          <br>
+          <dt>통신판매업신고</dt>
+          <dd>제2017-서울강남-02297호</dd>
+          <br>
+          <dt>사업자등록번호</dt>
+          <dd>138-85-19612</dd>
+        </dl>
+      </div>
+      <ul class="list_policy">
+        <li><a href="">사업자정보확인</a></li>
+        <li><a href="">이용약관</a></li>
+        <li><a href="">개인정보 처리방침</a></li>
+      </ul>
+      <div class="sub_wrap">
+        <p>
+          <em>고객님은 안전거래를 위해 결제 시 저희 사이트에서 가입한<br>
+            구매안전서비스를 이용하실 수 있습니다.</em>
+        </p>
+        <ul class="list_subCheck">
+          <li><a href="">토스페이먼츠 가입확인</a></li>
+          <li><a href="">나이스페이먼츠 가입확인</a></li>
+        </ul>
+      </div>
+      <span class="copyright">ⓒ KOLON SPORT all rights reserved</span>
+      <ul class="list_social">
+        <li><a href="">Facebook</a></li>
+        <li><a href="">Instagram</a></li>
+        <li><a href="">Youtube</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+
 </html>
